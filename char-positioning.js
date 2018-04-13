@@ -8,14 +8,14 @@ function charPositioning(string){
       continue;
     }
 
-    if(!charCount[letter]){
+    if(!charPosition[letter]){
       charPosition[letter] = [i];
     } else {
       charPosition[letter].push(i);
     }
 
   }
-  return charCount;
+  return charPosition;
 }
 
 console.log(charPositioning("lighthouse in the house"));
